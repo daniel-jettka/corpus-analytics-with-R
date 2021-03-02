@@ -9,8 +9,11 @@ library(xml2)
 
 ### Sample function call ###
 # 
-# 1. find all instances of "lachen" in gg tier
+# 1. find all instances of "lachen" in gg tier (in ISO/TEI-spoken XML files)
 # count_in_xml_list(xmllist, ".//*[local-name()='spanGrp' and @type='gg']/*[local-name()='span' and *[local-name()='span']='lachen']")
+# 
+# 2. find all instances of "lachen" a word representation (in EXMARaLDA Segmented Transcription - EXS files)
+# count_in_xml_list(xmllist, ".//*[local-name()='ts' and @n='HIAT:w' and text()='CDU']")
 # 
 #############################
 
